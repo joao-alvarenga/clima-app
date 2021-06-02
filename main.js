@@ -11,6 +11,11 @@ form.addEventListener("submit", e => {
 
     // consultar se já tem uma cidade
     const listItems = list.querySelectorAll(".cidade-section .cidades");
-    const listItemsArray = Array.form(listItems); 
-    
+    const listItemsArray = Array.from(listItems); 
+
+    if (listItemsArray.lenght > 0) {
+        const filteredArray = listItemsArray.filter(el => {
+            let content = "";            
+        })
+    }
     })

@@ -12,9 +12,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: normal;
 }
 
 html {
   font-size: 62.5%;
+}
+
+
+/* API Key banner
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.api {
+  background: #fffbbc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.api a {
+  text-decoration: underline;
+}
+
+.api a:hover {
+  text-decoration: none;
 }

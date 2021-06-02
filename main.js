@@ -36,7 +36,7 @@ form.addEventListener("submit", e => {
         if (filteredArray.length > 0) {
             msg.textContent = `Você já sabe a previsão para ${
                 filteredArray[0].querySelector(".cidade-nome span").textContent
-              } ou então seja mais específico colacando o codigo do país também.`;
+              }, ou então seja mais específico colacando o codigo do país também.`;
               form.reset();
               input.focus();
               return;

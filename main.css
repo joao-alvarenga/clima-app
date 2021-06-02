@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400;1,500&display=swap');
+
 :root {
   --bg_main: #0a1f44;
+  --main-font: 'Roboto', sans-serif;
   --text_light: #fff;
   --text_med: #53627c;
   --text_dark: #1e2432;
@@ -18,8 +21,63 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: var(--main-font);
+}
 
-/* API Key banner
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 4em;
+  font-weight: 400;
+  color: #ff8c00;
+}
+
+input[type=text] {
+  padding: .5em;
+  width: 18em;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid #555;
+}
+
+
+button[type=submit] {
+  padding: .4em;
+  width: 3em;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid #555;
+  color: #222;
+}
+
+button[type=submit]:hover {
+  color: #ff8c00;
+  background-color: #555;
+}
+
+.cidade-section figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.wrapper form .msg {
+  position: absolute;
+  top: 16%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  min-height: 40px;
+}
+
+
+/* API 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .api {
   background: #fffbbc;

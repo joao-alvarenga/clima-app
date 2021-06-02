@@ -37,6 +37,12 @@ form.addEventListener("submit", e => {
             msg.textContent = `Você já sabe a previsão para ${
                 filteredArray[0].querySelector(".city-name span").textContent
               } ou então seja mais específico colacando o codigo do país também`;
+              form.reset();
+              input.focus();
+              return;
         }
     }
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
+
     })

@@ -23,13 +23,16 @@ html {
 
 body {
   font-family: var(--main-font);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 
 .wrap-container {
   height: 100vh; 
   display: flex;
   align-items: flex-start;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  
 }
 
 .wrapper {
@@ -92,7 +95,39 @@ button[type=submit]:hover {
   color: #222;
 }
 
+.cidade-section {
+    margin: 70px 20px 20px;
+}
 
+.cidade-section .cidades {
+  display: grid;
+  grid-gap: 32px 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cidade-section .city {
+  position: relative;
+  padding: 40px 10%;
+  border-radius: 20px;
+  text-align: center;
+  background: var(--text_light);
+  color: var(--text_med);
+}
+
+
+
+.cidade-section .city::after {
+  content: '';
+  width: 90%;
+  height: 50px;
+  position: absolute;
+  bottom: -12px;
+  left: 15%;
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 20px;
+  background: var(--text_light);
+}
 /* API 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .api {

@@ -10,7 +10,7 @@ form.addEventListener("submit", e => {
     let inputVal = input.value;
 
     // consultar se já tem uma cidade
-    const listItems = list.querySelectorAll(".cidade-section .cidades");
+    const listItems = list.querySelectorAll(".cidade-section .city");
     const listItemsArray = Array.from(listItems); 
 
     if (listItemsArray.length > 0) {
@@ -36,7 +36,7 @@ form.addEventListener("submit", e => {
         if (filteredArray.length > 0) {
             msg.textContent = `Você já sabe a previsão para ${
                 filteredArray[0].querySelector(".cidade-nome span").textContent
-              } ou então seja mais específico colacando o codigo do país também`;
+              } ou então seja mais específico colacando o codigo do país também.`;
               form.reset();
               input.focus();
               return;

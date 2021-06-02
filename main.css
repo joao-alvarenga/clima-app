@@ -23,6 +23,10 @@ body {
   font-family: var(--main-font);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-width: 320px;
+  direction: ltr;
+  text-align: left;
+  min-height: 100%;
   background-image: linear-gradient(15deg, #46535a 0%, #000000 100%);
 }
 

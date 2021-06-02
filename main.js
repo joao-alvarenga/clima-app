@@ -13,9 +13,17 @@ form.addEventListener("submit", e => {
     const listItems = list.querySelectorAll(".cidade-section .cidades");
     const listItemsArray = Array.from(listItems); 
 
-    if (listItemsArray.lenght > 0) {
+    if (listItemsArray.length > 0) {
         const filteredArray = listItemsArray.filter(el => {
-            let content = "";            
+            let content = "";
+            
+            if (inputVal.includes(",")) {
+
+                if (inputVal.split(",")[1].length > 2) {
+                    inputVal = inputVal.split(",")[0];
+                    content = el
+                }
+            }
         })
     }
     })

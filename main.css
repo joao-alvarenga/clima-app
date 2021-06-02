@@ -92,7 +92,7 @@ button[type=submit]:hover {
   max-width: 450px;
   min-height: 40px;
   font-size: 1.5em;
-  color: #222;
+  color: #f5f5f5;
 }
 
 .cidade-section {
@@ -142,10 +142,6 @@ button[type=submit]:hover {
   z-index: -1;
   animation: coranimation 3s ease alternate infinite;
   background-size: 300% 300%;
-}
-
-.cidade-icon {
-
 }
 
 @keyframes coranimation {

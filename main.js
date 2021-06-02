@@ -52,6 +52,30 @@ form.addEventListener("submit", e => {
         const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
             weather[0]["icon"]
         }.svg`; 
-        
-    });
+
+        const li = document.createElement("li");
+      li.classList.add("city");
+      const markup = `
+        <h2 class="cidade-nome" data-name="${name},${sys.country}">
+          <span>${name}</span>
+          <sup>${sys.country}</sup>
+        </h2>
+        <div class="cidade-temp">${Math.round(main.temp)}<sup>°C</sup></div>
+        <figure>
+          <img class="cidade-icon" src="${icon}" alt="${
+        weather[0]["description"]
+      }">
+          <figcaption>${weather[0]["description"]}</figcaption>
+        </figure>
+      `;
+      li.innerHTML = markup;
+      list.appendChild(li);
     })
+    .catch(() => {
+        msg.textContent = "Por favor coloque uma cidade valida";
+      });
+        
+     msg.textContent = "";
+     form.reset();
+     input.focus();
+    });

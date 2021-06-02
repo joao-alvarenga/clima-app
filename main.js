@@ -22,8 +22,21 @@ form.addEventListener("submit", e => {
                 if (inputVal.split(",")[1].length > 2) {
                     inputVal = inputVal.split(",")[0];
                     content = el
+                    .querySelector(".cidade-nome span")
+                    .textContent.toLowerCase();
+                } else {
+                    content = el.querySelector(".cidade-nome").dataset.name.toLowerCase(); 
                 }
+            } else { 
+                content = el.querySelector(".cidade-nome span").textContent.toLowerCase();
             }
-        })
+            return content == inputVal.toLowerCase();
+        });
+        
+        if (filteredArray.length > 0) {
+            msg.textContent = `Você já sabe a previsão para ${
+                filteredArray[0].querySelector(".city-name span").textContent
+              } ou então seja mais específico colacando o codigo do país também`;
+        }
     }
     })

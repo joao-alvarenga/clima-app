@@ -5,6 +5,7 @@ const list = document.querySelector(".cidade-section .cidades");
 /* API Key Provedor do API https://openweathermap.org/ */
 const apiKey = "f6dcd8282da08edcc2032d01e33e35c1";
 
+// Previne o carregamento da pagina.
 form.addEventListener("submit", e => {
     e.preventDefault();
     let inputVal = input.value;
@@ -44,7 +45,7 @@ form.addEventListener("submit", e => {
     }
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=metric`;
-
+// requisição API
     fetch(url)
     .then(response => response.json())         
     .then(data => {

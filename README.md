@@ -6,3 +6,5 @@ usando API para atualizar as informações sobre o clima, com isso pode-se pesqu
 se a cidade já estiver aparecendo na tela e for pesquisada novamente, aparecera uma mensagem de erro, e uma mensagem de erro também é mostrada se o nome da cidade for invalido. 
 pode também pesquisar a cidade somente pelo cep da cidade em questão.
 para pegar os dados desejados foi usado Fetch API para fazer a requisição AJAX.
+
+deploy https://clima-app-js.netlify.app/

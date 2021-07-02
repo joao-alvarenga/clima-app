@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "É um simples app que mostra a previsão do tempo, usando html, css, JavaScript, AJAX e API. \r O provedor do API é https://openweathermap.org/",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joao-alvarenga/clima-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joao-alvarenga/clima-app/issues"
+  },
+  "homepage": "https://github.com/joao-alvarenga/clima-app#readme"
+}
